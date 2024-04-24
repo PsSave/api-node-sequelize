@@ -22,8 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'User',
-    tableName: 'users', // Essa linha é nova e define o nome da tabela no banco de dados que será criada para armazenar os usuários do sistema.
-    // colocamos tableName: 'users' para que a tabela no banco de dados seja chamada de users e nao haja conflito com a tabela User que é criada automaticamente pelo sequelize.
+    tableName: 'users',
   });
   return User;
 };
