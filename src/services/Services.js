@@ -18,7 +18,13 @@ class Services {
   }
 
   async update(data, id) {
-    return await database[this.model].update(data, { where: { id: Number(id) } });
+    const update = await database[this.model].update(data, { where: { id: Number(id) } });
+
+    if(update[0] == 0) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
   async delete(id) {
