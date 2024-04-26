@@ -11,3 +11,7 @@ para fazermos uma migração para o BANCO utilizamos o comando:
 para criar seeds utilizamos o comando:
  - npx sequelize-cli seed:generate --name demo-user
  - npx sequelize-cli db:seed:{nome} // para adicionar a seed no BANCO
+
+  Equipe.hasMany(Atleta);
+  Atleta.belongsTo(Equipe);
+    Ou seja, uma equipe tem vários (hasMany) atletas, mas atletas pertencem a (belongsTo) somente uma equipe cada.
