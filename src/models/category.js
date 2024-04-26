@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Categoria.init({
-    titulo: DataTypes.STRING
+  Category.init({
+    title: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Category',

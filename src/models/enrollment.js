@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Matricula.init({
+  Enrollment.init({
     status: DataTypes.STRING
   }, {
     sequelize,

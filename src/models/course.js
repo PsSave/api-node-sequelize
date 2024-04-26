@@ -13,10 +13,10 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Curso.init({
-    titulo: DataTypes.STRING,
-    descricao: DataTypes.STRING,
-    data_inicio: DataTypes.DATEONLY
+  Course.init({
+    title: DataTypes.STRING,
+    description: DataTypes.STRING,
+    start_date: DataTypes.DATEONLY
   }, {
     sequelize,
     modelName: 'Course',
