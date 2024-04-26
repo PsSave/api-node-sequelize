@@ -14,12 +14,12 @@ module.exports = {
       },
       studant_id: {
         allowNull: false,
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         references: {model: 'users', key: 'id'}
       },
       course_id: {
         allowNull: false,
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         references: {model: 'courses', key: 'id'}
       },
       createdAt: {

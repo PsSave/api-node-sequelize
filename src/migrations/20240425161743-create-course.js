@@ -20,12 +20,12 @@ module.exports = {
       },
       teacher_id: {
         allowNull: false,
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         references: { model: 'users', key: 'id'}
       },
       category_id: {
         allowNull: false,
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER,
         references: { model: 'categories', key: 'id'}
       },
       createdAt: {
