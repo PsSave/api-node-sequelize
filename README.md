@@ -10,7 +10,7 @@ para fazermos uma migração para o BANCO utilizamos o comando:
 
 para criar seeds utilizamos o comando:
  - npx sequelize-cli seed:generate --name demo-user
- - npx sequelize-cli db:seed:{nome} // para adicionar a seed no BANCO
+ - npx sequelize-cli db:seed --seed {nome} // para adicionar a seed no BANCO
 
   Equipe.hasMany(Atleta);
   Atleta.belongsTo(Equipe);
